@@ -1,0 +1,304 @@
+/* Global Layout Set-up */
+
+
+.icons {
+  margin-top: 15px;
+  height: 100px;
+  fill: white;
+}
+
+.modal-body {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .modal-section {
+      flex-direction: row;
+}
+
+.bag {
+  width: 180px;
+}
+
+.projects.btn-primary {
+  background-color: #E5C3D1;
+}
+
+
+.projects {
+background-color: lightgrey;
+border: grey solid 1px;
+margin: 10px 15px;
+width: 200px;
+}
+
+#information {
+border-radius: 25px;
+}
+
+hover { cursor: pointer; }
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+
+
+
+body {
+      margin: 0px;
+      grid-row: 2;
+        display: grid;
+      grid-template-rows: 125px auto;
+      grid-template-areas: "nav" "mainpage";
+    }
+
+}
+
+
+a:hover {
+  text-decoration: none;
+
+}
+
+h2 {
+  font-size: 28px;
+}
+
+  .hide {
+  display: none;
+}
+
+.page-setup {
+  display: grid;
+}
+
+
+
+.navbar {
+  background-image: url("images/navbackground.jpg");
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+}
+
+#mainpage {
+  margin-top: 15px;
+}
+
+
+.logo {
+  color: white;
+  font-size: 20px;
+}
+
+/* ELEMENT */
+
+#billboard {
+  margin-top: 15px;
+  background-color: lightgrey;
+}
+
+.projects-text {
+height: 125px;
+  width: 300px;
+  justify-content:center;
+}
+
+/* Text */
+
+.billboardExample {
+  color: white;
+  width: auto;
+}
+
+.billboardText {
+  font-size: 28px;
+
+}
+
+
+/* Images */
+
+.billboardImage {
+  height: 350px;
+  width: auto;
+}
+
+
+
+.profile-picture {
+  margin-top: 10px;
+  height: 220px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: dashed #E5C3D1 4px;
+}
+
+#profile {
+  position: relative;
+}
+
+#profile .btn {
+   position: absolute;
+   top: 200px;
+
+}
+
+#sitenav {
+  grid-area: nav;
+}
+
+#mainpage {
+  grid-area: mainpage;
+}
+
+
+/*BUTTONS*/
+
+.play-button {
+  height: 80px;
+  width: 80px;
+  filter: brightness(0) invert(1);
+  margin-left: 10px;
+
+}
+
+.resume-button {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+  filter: brightness(0) invert(1);
+  margin-left: 10px;
+
+}
+
+.video {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  background-color: #55D6BE;
+  border-radius: 50%;
+  border: dashed #E5C3D1 4px;
+}
+
+.linkbtn {
+    display: flex;
+  justify-content:space-between;
+  align-items: center;
+  font-size: 16px;
+  background-color: #55D6BE;
+  border-color: lightgrey;
+  width: 180px;
+  height: 35px;
+}
+
+
+
+
+  /* Previous and next Buttons */
+
+
+  .previous {
+    visibility: hidden;
+  }
+
+  /* The Close Button */
+  .close {
+    float: right;
+    color: #c8c8c8;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .activity-button {
+    transform: translateY(15px);
+  }
+
+.previous,
+.next {
+  color: #c8c8c8;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  top: 150px;
+}
+
+.previous {
+  float: left;
+  margin-right: 5px;
+}
+
+.next {
+  float: right;
+  left: 5px;
+}
+
+.previous:hover,
+.next:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+#image-CV {
+  height: 255px;
+  width: 290px;
+}
+
+.row {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+  .navbar-expand-lg .navbar-nav,
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 16px
+  }
+
+body {
+    grid-row: 1;
+    grid-template-columns: 180px auto;
+    grid-template-areas: "nav mainpage";
+  }
+
+
+.navbar {
+  height: 100vh;
+  width: auto;
+}
+
+.navbar-brand {
+  margin-top: 2rem;
+}
+
+.navbar-collapse {
+  margin-top: 3rem;
+  flex-grow: 0;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+}
