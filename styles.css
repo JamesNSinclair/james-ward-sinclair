@@ -103,6 +103,26 @@ height: 145px;
   justify-content:center;
 }
 
+#information button {
+  margin-bottom: 15px;
+
+}
+  #travel h2,
+  #modal-header h2,
+#activity h2 {
+  padding-bottom: 25px;
+}
+    #travel p,
+    .modal-content p,
+    #activity p {
+      font-size: 15px;
+    }
+
+.modal-footer {
+  background-color: white;
+}
+
+
 /* Text */
 
 .billboardExample {
@@ -123,6 +143,11 @@ height: 145px;
   width: auto;
 }
 
+.hotel {
+    margin: 0 auto 15px;
+    height: 280px;
+    width: 500px;
+  }
 
 
 .profile-picture {
@@ -132,6 +157,12 @@ height: 145px;
   object-fit: cover;
   border-radius: 50%;
   border: dashed #E5C3D1 4px;
+}
+
+
+.techdegree {
+      height: 300px;
+    width: 100%;
 }
 
 #profile {
@@ -313,6 +344,22 @@ body {
 
 .logo {
     margin-top: 30px;
+}
+
+.techdegree {
+  padding: 10px auto 15px;
+  border-radius: 0px;
+  object-fit:fill;
+  height: 350px;
+  width: 250px;
+  }
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+#activity {
+  margin-left: 60px;
 }
 
 }
