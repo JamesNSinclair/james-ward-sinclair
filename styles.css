@@ -1,11 +1,6 @@
 /* Global Layout Set-up */
 
 
-.icons {
-  margin-top: 15px;
-  height: 100px;
-  fill: white;
-}
 
 .modal-body {
    display: flex;
@@ -14,10 +9,6 @@
 
  .modal-section {
       flex-direction: row;
-}
-
-.bag {
-  width: 180px;
 }
 
 .projects.btn-primary {
@@ -108,8 +99,7 @@ h2 {
 }
 
 .projects-text {
-height: 125px;
-  width: 300px;
+height: 145px;
   justify-content:center;
 }
 
@@ -162,6 +152,20 @@ height: 125px;
   grid-area: mainpage;
 }
 
+/*SVGS */
+
+.icon {
+  margin-top: 15px;
+  height: 100px;
+  width: 150px;
+  fill: white;
+}
+
+.webdev {
+  height: 100px;
+  width: 100px;
+  fill: white;
+}
 
 /*BUTTONS*/
 
@@ -202,6 +206,14 @@ height: 125px;
   height: 35px;
 }
 
+.modalbtn {
+  size: 16px;
+  background-color: #55D6BE;
+  border-color: lightgrey;
+  width: 180px;
+  height: 35px;
+  margin-bottom: 15px;
+}
 
 
 
@@ -278,7 +290,7 @@ height: 125px;
 
 body {
     grid-row: 1;
-    grid-template-columns: 180px auto;
+    grid-template-columns: 160px auto;
     grid-template-areas: "nav mainpage";
   }
 
@@ -286,6 +298,7 @@ body {
 .navbar {
   height: 100vh;
   width: auto;
+  align-items: flex-start;
 }
 
 .navbar-brand {
@@ -295,6 +308,7 @@ body {
 .navbar-collapse {
   margin-top: 3rem;
   flex-grow: 0;
+  align-items: flex-start;
 }
 
 .logo {
