@@ -16,10 +16,11 @@
 
 
 .projects {
-background-color: lightgrey;
+background-color: WhiteSmoke;
 border: dashed #E5C3D1 2px;
 margin: 10px 15px 15px;
 width: auto;
+
 }
 
 #information {
@@ -94,13 +95,93 @@ border-right: solid lightgrey 2px;
 
 /* ELEMENT */
 
+#information,
+#billboard,
+button,
+span,
+#firstpara,
+#secondpara,
+#video,
+#image-CV,
+#sitenav {
+  transition: 2s;
+}
+
+.welcomeBtn {
+
+      width: 250px;
+      height: 250px;
+  position: fixed;
+  background-color: #55D6BE;
+  color: white;
+  top: 30%;
+  left: 55%;
+  transform: translate(-50%, 0);
+  z-index: 500;
+  border-radius: 50%;
+ display: none;
+ border: white;
+}
+
+button.unfixed {
+      display: block;
+  }
+
+#video.unfixed {
+  margin-top: -105px;
+  transform: translate(300px, -300px);
+  transform: scale(2);
+  background-color: grey;
+}
+
+#firstpara.unfixed {
+  margin-top: 40px;
+    color:black;
+  transform: translate(600px, -600px);
+ transform: rotate(120deg);
+
+}
+
+#information.unfixed {
+  display: none;
+}
+
+#secondpara.unfixed {
+transform: translatex(600px);
+font-size: 30px
+}
+
+body.unfixed  {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+span.unfixed {
+  color: black;
+  font-size: 14px;
+}
+
+#sitenav.unfixed {
+  background-color: grey;
+ transform: scaleX(2);
+}
+
+#billboard.unfixed {
+  transform: translateY(320px);
+}
+
+#image-CV.unfixed{
+transform: translate(-100px, -800px);
+}
+
 .modal-body {
   padding-top: 0;
 }
 
 #billboard {
   margin-top: 15px;
-  background-color: lightgrey;
+  background-color: WhiteSmoke;
   flex-direction: column;
   border: dashed #E5C3D1 4px;
 }
@@ -138,7 +219,7 @@ margin-top: 15px;
 /* Text */
 
 .billboardExample {
-  color: white;
+  font-weight: 600;
   width: auto;
 }
 
@@ -233,7 +314,7 @@ margin-top: 15px;
   margin-top: 15px;
   height: 100px;
   width: 150px;
-  fill: white;
+  fill: #55D6BE;
 }
 
 .webdev {

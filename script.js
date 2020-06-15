@@ -9,6 +9,22 @@ const button3 = document.querySelector('#button-3');
 const button2 = document.querySelector('#button-2');
 const button1 = document.querySelector('#button-1');
 
+const els = document.querySelectorAll('.unfixed');
+const button = document.querySelector('.welcomeBtn');
+
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+
+button.addEventListener('click', _removeClasses)
+
+function _removeClasses() {
+  for (var i = 0; i < els.length; i++) {
+    els[i].classList.remove('unfixed')
+  }
+}
+
+
 
 
 for (let i=0; i < question.length; i+=1 ) {
