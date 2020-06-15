@@ -19,12 +19,16 @@
 .projects {
 background-color: lightgrey;
 border: grey solid 1px;
-margin: 10px 15px;
-width: 200px;
+margin: 10px 15px 15px;
+width: auto;
 }
 
 #information {
 border-radius: 25px;
+}
+
+#information .container-fluid {
+  max-width: auto;
 }
 
 hover { cursor: pointer; }
@@ -48,7 +52,7 @@ body {
       margin: 0px;
       grid-row: 2;
         display: grid;
-      grid-template-rows: 125px auto;
+      grid-template-rows: 100px auto;
       grid-template-areas: "nav" "mainpage";
     }
 
@@ -60,9 +64,6 @@ a:hover {
 
 }
 
-h2 {
-  font-size: 28px;
-}
 
   .hide {
   display: none;
@@ -100,11 +101,17 @@ h2 {
 #billboard {
   margin-top: 15px;
   background-color: lightgrey;
+  flex-direction: column;
 }
 
 .projects-text {
-height: 145px;
+height: 140px;
+margin-top: 15px;
   justify-content:center;
+}
+
+.projectsTitle {
+  height: 70px;
 }
 
 #information button {
@@ -135,24 +142,43 @@ height: 145px;
 }
 
 .billboardText {
-  font-size: 28px;
+  text-align: center;
+  font-size: 21px;
 
+}
+
+.billboardBtn {
+  margin: 10px auto 15px;
+
+}
+
+#information {
+  margin: auto;
 }
 
 
 /* Images */
 
 .billboardImage {
-  height: 350px;
-  width: auto;
+  height: 150px;
+  margin: auto;
+  width: auto%;
+  object-fit: contain;
 }
 
 .experienceImg {
     margin: 0 auto 15px;
-    height: 230px;
-    width: 500px;
+    height: 245px;
+    width: 100%;
     object-fit: cover;
   }
+
+.feedbackImg {
+      margin: 0 auto 15px;
+      height: auto;
+      width: 100%;
+      object-fit: contain;
+    }
 
 
 .profile-picture {
@@ -166,8 +192,9 @@ height: 145px;
 
 
 .techdegree {
-      height: 300px;
+      height: auto;
     width: 100%;
+    object-fit: contain;
 }
 
 #profile {
@@ -223,7 +250,7 @@ height: 145px;
 }
 
 .video {
-  margin: auto;
+  margin: 40px auto;
   width: 150px;
   height: 150px;
   background-color: #55D6BE;
@@ -309,10 +336,34 @@ height: 145px;
   margin: 0;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 @media screen and (min-width: 768px) {
 
+  .billboardImage {
+    height: 320px;
+    width: auto;
+  }
 
 
+  h2 {
+    font-size: 28px;
+  }
+
+
+.container-fluid {
+  padding: 15px;
+
+}
+
+.billboardText {
+padding-left: 15px;
+padding-right: 15px;
+}
+
+}
 
 @media only screen and (min-width: 1024px) {
 
@@ -354,17 +405,48 @@ body {
 .techdegree {
   padding: 10px auto 15px;
   border-radius: 0px;
-  object-fit:fill;
+  object-fit: cover;
   height: 350px;
-  width: 250px;
+  width: 280px;
   }
 
 .modal-dialog {
+
     max-width: 600px;
 }
 
-#activity {
-  margin-left: 60px;
+#tech.modal-dialog {
+    max-width: 700px;
 }
+
+#test.modal-dialog {
+    max-width: 500px;
+}
+
+#activity {
+  margin-left: 10px;
+}
+
+#billboard {
+  flex-direction: row;
+  margin: 15px auto auto;
+}
+
+.billboardText {
+  text-align: left;
+  padding: 0;
+  font-size: 28px;
+  }
+
+.billboardBtn {
+  margin-left: 0;
+}
+
+.projects-text {
+height: 145px;
+  justify-content:center;
+}
+
+
 
 }
