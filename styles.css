@@ -93,6 +93,10 @@ h2 {
 
 /* ELEMENT */
 
+.modal-body {
+  padding-top: 0;
+}
+
 #billboard {
   margin-top: 15px;
   background-color: lightgrey;
@@ -143,10 +147,11 @@ height: 145px;
   width: auto;
 }
 
-.hotel {
+.experienceImg {
     margin: 0 auto 15px;
-    height: 280px;
+    height: 230px;
     width: 500px;
+    object-fit: cover;
   }
 
 

@@ -34,19 +34,17 @@ questions.addEventListener('click', (e) => {
 }
 
 
-
-
 button1.addEventListener('click', () => {
+  let number = activities.length;
+
+  createScroll(0, 1, number);
+});
+
+button2.addEventListener('click', () => {
   let number = hotels.length;
 
 
   createScroll(0, 0, number);
-});
-
-button2.addEventListener('click', () => {
-  let number = activities.length;
-
-  createScroll(0, 1, number);
 });
 
 button3.addEventListener('click', () => {
