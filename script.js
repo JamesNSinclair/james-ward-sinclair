@@ -11,7 +11,11 @@ const button1 = document.querySelector('#button-1');
 
 const els = document.querySelectorAll('.unfixed');
 const button = document.querySelector('.welcomeBtn');
+const start = document.querySelector('.loadpage');
+const page = document.querySelector('#firstpage');
+const clean = document.querySelector('#clean');
 
+console.log(start);
 $(document).ready(function(){
     $(this).scrollTop(0);
 });
@@ -25,6 +29,17 @@ function _removeClasses() {
 }
 
 
+
+start.addEventListener('click', () => {
+  page.classList.add('move');
+  clean.classList.remove('move');
+})
+
+function _removeClasses() {
+  for (var i = 0; i < els.length; i++) {
+    els[i].classList.remove('unfixed')
+  }
+}
 
 
 for (let i=0; i < question.length; i+=1 ) {
