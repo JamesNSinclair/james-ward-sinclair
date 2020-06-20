@@ -86,7 +86,7 @@ border-right: solid lightgrey 2px;
 
 .logo {
   color: white;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 /* ELEMENT */
@@ -350,7 +350,7 @@ margin-top: 5px;
   background-color: #55D6BE;
   border-color: lightgrey;
   width: 200px;
-  height: 35px;
+  height: 40px;
 }
 
 .modalbtn {
@@ -448,7 +448,7 @@ margin-top: 5px;
 
   #image-CV {
     height: 295px;
-    width: 290px;
+    width: 300px;
   }
 
   .billboardImage {
@@ -489,10 +489,12 @@ height: 180px;
 
 @media only screen and (min-width: 1024px) {
 
+  #about {
+     padding-top: 15px;
+  }
+
   .logo {
-    padding-top: 30px;
-    width: 125px;
-    text-align: center;
+      width: 125px;
   }
 
   .navbar-expand-lg .navbar-nav,
@@ -627,4 +629,11 @@ transform: translate(-100px, -800px);
 #image-CV {
  margin-bottom: 5px;
 }
+
+#billboard {
+  margin-right: 1.5rem!important;
+  margin-left: 1.5rem!important;
+}
+}
+
 }
