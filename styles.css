@@ -14,11 +14,10 @@
   background-color: #E5C3D1;
 }
 
-
 .projects {
 background-color: WhiteSmoke;
-border: dashed #E5C3D1 2px;
-margin: 10px 15px 15px;
+border: dashed #E5C3D1 3px;
+margin: 10px 10px 15px;
 width: auto;
 
 }
@@ -54,9 +53,11 @@ body {
         display: grid;
       grid-template-rows: 100px auto;
       grid-template-areas: "nav" "mainpage";
+      font-family: 'Muli', sans-serif;
     }
 
 }
+
 
 
 a:hover {
@@ -76,17 +77,12 @@ a:hover {
 
 
 .navbar {
-  background-color: #55D6BE;
+  background-image: linear-gradient(180deg, rgba(85,214,190,1) 69%, rgba(1,195,209,1) 100%);
 border-right: solid lightgrey 2px;
   position: fixed;
   width: 100vw;
   z-index: 900;
 }
-
-#mainpage {
-  margin-top: 15px;
-}
-
 
 .logo {
   color: white;
@@ -106,6 +102,10 @@ border-right: solid lightgrey 2px;
 
 }
 
+.nav-item .active {
+  background-color: #E5C3D1;
+}
+
 #firstpage.move {
   transform: translateX(-100%);
 }
@@ -116,7 +116,7 @@ border-right: solid lightgrey 2px;
 }
 
 .layer {
-    background-color: rgba(85, 214, 190, 0.8);
+    background-image: linear-gradient(180deg, rgba(85,214,190,0.85) 69%, rgba(1,195,209,0.85) 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -166,12 +166,14 @@ span,
   margin-top: 15px;
   background-color: WhiteSmoke;
   flex-direction: column;
-  border: dashed #E5C3D1 4px;
+  border: dashed #E5C3D1 3px;
 }
+
+
 
 .projects-text {
 height: 100px;
-margin-top: 15px;
+margin-top: 5px;
   justify-content:center;
 }
 
@@ -200,6 +202,8 @@ margin-top: 15px;
 
 
 /* Text */
+
+
 
 .intro {
   font-size: 65px;
@@ -265,11 +269,11 @@ margin-top: 15px;
 
 .profile-picture {
   margin-top: 10px;
-  height: 220px;
-  width: 220px;
+  height: 260px;
+  width: 260px;
   object-fit: cover;
   border-radius: 50%;
-  border: dashed #E5C3D1 4px;
+  border: dashed #E5C3D1 3px;
 }
 
 
@@ -285,7 +289,7 @@ margin-top: 15px;
 
 #profile .btn {
    position: absolute;
-   top: 200px;
+   top: 240px;
 
 }
 
@@ -327,8 +331,6 @@ margin-top: 15px;
   height: 15px;
   width: 15px;
   filter: brightness(0) invert(1);
-  margin-left: 10px;
-
 }
 
 .video {
@@ -337,7 +339,7 @@ margin-top: 15px;
   height: 150px;
   background-color: #55D6BE;
   border-radius: 50%;
-  border: dashed #E5C3D1 4px;
+  border: dashed #E5C3D1 3px;
 }
 
 .linkbtn {
@@ -347,7 +349,7 @@ margin-top: 15px;
   font-size: 16px;
   background-color: #55D6BE;
   border-color: lightgrey;
-  width: 180px;
+  width: 200px;
   height: 35px;
 }
 
@@ -409,10 +411,6 @@ margin-top: 15px;
 
 /* MEDIA QUERIES */
 
-#image-CV {
-  height: 255px;
-  width: 290px;
-}
 
 .row {
   margin: 0;
@@ -422,7 +420,36 @@ margin-top: 15px;
   padding: 0;
 }
 
+#image-CV {
+  width: 100%;
+ margin-bottom: 25px;
+}
+
 @media screen and (min-width: 768px) {
+
+  #billboard {
+    flex-direction: row;
+    margin: 15px auto auto;
+  }
+
+  .billboardText {
+    text-align: left;
+    padding: 0;
+    font-size: 28px;
+    }
+
+  .billboardBtn {
+    margin-left: 0;
+  }
+
+  .video {
+    margin: auto;
+  }
+
+  #image-CV {
+    height: 295px;
+    width: 290px;
+  }
 
   .billboardImage {
     height: 320px;
@@ -451,8 +478,22 @@ height: 180px;
 }
 
 }
+@media (min-width: 992px) {
+#profile.col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 70.666667%;
+    max-width: 70.666667%;
+    padding-left: 0;
+}
+}
 
 @media only screen and (min-width: 1024px) {
+
+  .logo {
+    padding-top: 30px;
+    width: 125px;
+    text-align: center;
+  }
 
   .navbar-expand-lg .navbar-nav,
   .navbar {
@@ -468,6 +509,9 @@ body {
     grid-template-areas: "nav mainpage";
   }
 
+#billboardExample {
+  margin-left: 25px;
+}
 
 .navbar {
   height: 100vh;
@@ -487,6 +531,7 @@ body {
 
 .logo {
     margin-top: 30px;
+
 }
 
 .techdegree {
@@ -514,21 +559,6 @@ body {
   margin-left: 10px;
 }
 
-#billboard {
-  flex-direction: row;
-  margin: 15px auto auto;
-}
-
-.billboardText {
-  text-align: left;
-  padding: 0;
-  font-size: 28px;
-  }
-
-.billboardBtn {
-  margin-left: 0;
-}
-
 .projects-text {
 height: 150px;
   justify-content:center;
@@ -543,9 +573,8 @@ button.unfixed {
   }
 
 #video.unfixed {
-  margin-top: -105px;
-  transform: translate(300px, -300px);
-  transform: scale(2);
+  transform: translate(150px, -300px) scale(2);
+
   background-color: grey;
 }
 
@@ -578,7 +607,7 @@ span.unfixed {
 }
 
 #sitenav.unfixed {
-  background-color: grey;
+  filter: grayscale(1) brightness(60%);
  transform: scaleX(2);
 }
 
@@ -590,4 +619,12 @@ span.unfixed {
 transform: translate(-100px, -800px);
 }
 
+#firstpara,
+#secondpara {
+  margin-left: 15px;
+}
+
+#image-CV {
+ margin-bottom: 5px;
+}
 }

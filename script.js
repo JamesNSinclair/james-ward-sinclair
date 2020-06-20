@@ -166,3 +166,39 @@ modal.innerHTML = html.innerHTML;
 
 buttonDisplay(index, number, next, previous);
 }
+
+
+const changeImg = document.getElementById("changingImage");
+
+let images = ["images/billboard/billboard-davies.png",
+              "images/billboard/billboard-ember.png",
+              "images/billboard/billboard-autistic.png",
+            "images/billboard/billboard-kubo.png",
+          "images/billboard/billboard-wedding.png",
+        ];
+
+let static = ["images/billboard/static1.png",
+                      "images/billboard/static2.png",
+                      "images/billboard/static3.png",
+                            ];
+let index=0;
+let counter=0;
+
+function changeImage()
+{
+  setTimeout(function(){ changeImg.setAttribute("src", static[counter]);}, 4500);
+  changeImg.setAttribute("src", images[index]);
+  index++;
+  counter++;
+  if(index >= images.length)
+  {
+    index=0;
+  }
+  if(counter >= static.length)
+  {
+    counter=0;
+  }
+
+}
+
+setInterval(changeImage, 5000);
