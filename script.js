@@ -2,7 +2,7 @@ let question = document.querySelectorAll("#question");
 let answer = document.querySelectorAll('#answer');
 const hotelModal = document.querySelectorAll('#hotel-modal');
 const hotels = document.querySelectorAll('.hotels');
-const activities = document.querySelectorAll('.activities');
+const techProjects = document.querySelectorAll('.techProjects');
 const testimonials = document.querySelectorAll('.testimonials');
 let modals = document.querySelectorAll('#modalHTML');
 const button3 = document.querySelector('#button-3');
@@ -66,7 +66,7 @@ questions.addEventListener('click', (e) => {
 
 
 button1.addEventListener('click', () => {
-  let number = activities.length;
+  let number = techProjects.length;
 
   createScroll(0, 1, number);
 });
@@ -149,10 +149,10 @@ modal.innerHTML = html.innerHTML;
 
 } else if (button === 1) {
 
-let changeActivities = activities[index];
- console.log(changeActivities);
+let changetechProjects = techProjects[index];
+ console.log(changetechProjects);
 
- const html = changeActivities;
+ const html = changetechProjects;
 modal.innerHTML = html.innerHTML;
 
 } else if (button === 2) {

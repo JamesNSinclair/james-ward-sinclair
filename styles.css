@@ -32,7 +32,6 @@ hover { cursor: pointer; }
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
-  
 }
 
 
@@ -55,7 +54,7 @@ body {
 
     .page-setup {
       display: grid;
-
+      min-width: 100vw;
     }
 
 
