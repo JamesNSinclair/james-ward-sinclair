@@ -3,7 +3,7 @@ let answer = document.querySelectorAll('#answer');
 const hotelModal = document.querySelectorAll('#hotel-modal');
 const hotels = document.querySelectorAll('.hotels');
 const activities = document.querySelectorAll('.activities');
-const travel = document.querySelectorAll('.travel');
+const testimonials = document.querySelectorAll('.testimonials');
 let modals = document.querySelectorAll('#modalHTML');
 const button3 = document.querySelector('#button-3');
 const button2 = document.querySelector('#button-2');
@@ -79,7 +79,7 @@ button2.addEventListener('click', () => {
 });
 
 button3.addEventListener('click', () => {
-  let number = travel.length;
+  let number = testimonials.length;
   console.log('yo');
   createScroll(0, 2, number);
 });
@@ -157,10 +157,10 @@ modal.innerHTML = html.innerHTML;
 
 } else if (button === 2) {
 
-let changeTravel = travel[index];
- console.log(changeTravel);
+let changetestimonials = testimonials[index];
+ console.log(changetestimonials);
 
- const html = changeTravel;
+ const html = changetestimonials;
 modal.innerHTML = html.innerHTML;
 }
 

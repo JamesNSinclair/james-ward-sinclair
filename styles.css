@@ -1,33 +1,23 @@
 /* Global Layout Set-up */
 
+:root {
+  --background: antiquewhite;
+  --nav: #55D6BE;
+  --layer: linear-gradient(180deg, rgba(85,214,190,0.85) 69%, rgba(1,195,209,0.85) 100%);
+  --dashed-border: #E5C3D1;
+--billboard-btn-text: white;
+  --project-billboard:#55D6BE;
+  --billboard-text: white;
+--billboard-button-text: white;
+  --billboard-button:;
+  --top-buttons: #55D6BE;
+  --resume-button: #55D6BE;
+    --resume-btn-text: white;
 
-.modal-body {
-   display: flex;
-   flex-direction: column;
- }
+  --icons: white;
+  --logo: white;
 
- .modal-section {
-      flex-direction: row;
-}
 
-.projects.btn-primary {
-  background-color: #E5C3D1;
-}
-
-.projects {
-background-color: WhiteSmoke;
-border: dashed #E5C3D1 3px;
-margin: 10px 10px 15px;
-width: auto;
-
-}
-
-#information {
-border-radius: 25px;
-}
-
-#information .container-fluid {
-  max-width: auto;
 }
 
 hover { cursor: pointer; }
@@ -42,8 +32,8 @@ hover { cursor: pointer; }
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
+  
 }
-
 
 
 
@@ -54,10 +44,19 @@ body {
       grid-template-rows: 100px auto;
       grid-template-areas: "nav" "mainpage";
       font-family: 'Muli', sans-serif;
+      min-height: 100vh;
+      background-color: var(--background);
     }
 
-}
 
+.hide {
+    display: none;
+    }
+
+    .page-setup {
+      display: grid;
+
+    }
 
 
 a:hover {
@@ -65,70 +64,12 @@ a:hover {
 
 }
 
-
-  .hide {
-  display: none;
-}
-
-.page-setup {
-  display: grid;
-}
-
-
-
-.navbar {
-  background-image: linear-gradient(180deg, rgba(85,214,190,1) 69%, rgba(1,195,209,1) 100%);
-border-right: solid lightgrey 2px;
-  position: fixed;
-  width: 100vw;
-  z-index: 900;
-}
-
-.logo {
-  color: white;
-  font-size: 26px;
-}
-
-/* ELEMENT */
-
-.loadpage {
-  position: fixed;
-    background-color: rgb(85, 214, 190);
-  background-image: url("images/laptops.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-    z-index: 1000;
-
-}
-
-.nav-item .active {
-  background-color: #E5C3D1;
-}
-
-#firstpage.move {
-  transform: translateX(-100%);
-}
-
-#clean.move {
-  margin-left: -2000px;
-  transform: rotate(-1800deg);
-}
-
-.layer {
-    background-image: linear-gradient(180deg, rgba(85,214,190,0.85) 69%, rgba(1,195,209,0.85) 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .loadpage,
 #information,
 #billboard,
 button,
 span,
+body,
 #firstpara,
 #secondpara,
 #video,
@@ -138,42 +79,128 @@ span,
 }
 
 
+
+/* ELEMENT */
+
+#information {
+  border-radius: 25px;
+}
+
+.navbar {
+  background: var(--nav);
+  border-right: solid lightgrey 2px;
+  position: fixed;
+  width: 100vw;
+  z-index: 900;
+}
+
+.nav-item .active {
+  background-color: #E5C3D1;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .modal-section {
+  flex-direction: row;
+}
+
+.projects.btn-primary {
+  background-color: #var(--proj-button);
+}
+
+.projects {
+  color: var(--billboard-text);
+  background-color: var(--project-billboard);
+  border: dashed var(--dashed-border) 3px;
+  margin: 10px 10px 15px;
+  width: auto;
+}
+
+.loadpage {
+  position: fixed;
+  background-color: rgb(85, 214, 190);
+  background-image: url("images/laptops.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* FIRST PAGE */
+
+#firstpage.move {
+  transform: translateX(-100%);
+}
+
+
+
 #clean  {
   transition: 3.5s;
 }
 
-.welcomeBtn {
+#clean.move {
+  margin-left: -2000px;
+  transform: rotate(-1800deg);
+}
 
-      width: 350px;
-      height: 350px;
+.layer {
+  background-image: var(--layer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* WELCOME */
+.welcomeBtn {
+  width: 350px;
+  height: 350px;
   position: fixed;
-  background-color: #55D6BE;
+  background-color: var(--top-buttons);
   color: white;
   top: 30%;
   left: 40%;
   z-index: 500;
   border-radius: 50%;
- display: none;
- border: white;
+  display: none;
+  border: white;
 }
+
+
+#billboard {
+  margin-top: 15px;
+  background: var(--project-billboard);
+  flex-direction: column;
+  border: dashed var(--dashed-border) 3px;
+}
+
+#information button {
+  margin-bottom: 15px;
+
+}
+#testimonials h2,
+#modal-header h2,
+#activity h2 {
+  padding-bottom: 25px;
+}
+#testimonials p,
+.modal-content p,
+#activity p {
+  font-size: 15px;
+    }
 
 
 .modal-body {
   padding-top: 0;
 }
 
-#billboard {
-  margin-top: 15px;
-  background-color: WhiteSmoke;
-  flex-direction: column;
-  border: dashed #E5C3D1 3px;
-}
-
-
-
 .projects-text {
-height: 100px;
-margin-top: 5px;
+  height: 100px;
+  margin-top: 5px;
   justify-content:center;
 }
 
@@ -181,23 +208,12 @@ margin-top: 5px;
   height: 70px;
 }
 
-#information button {
-  margin-bottom: 15px;
-
-}
-  #travel h2,
-  #modal-header h2,
-#activity h2 {
-  padding-bottom: 25px;
-}
-    #travel p,
-    .modal-content p,
-    #activity p {
-      font-size: 15px;
-    }
-
 .modal-footer {
   background-color: white;
+}
+
+#information .container-fluid {
+  max-width: auto;
 }
 
 
@@ -219,11 +235,17 @@ margin-top: 5px;
 .billboardText {
   text-align: center;
   font-size: 21px;
+  color: var(--billboard-text);
 
 }
 
 .billboardBtn {
+  font-size: 21px;
+  font-weight: bolder;
   margin: 10px auto 15px;
+  background: var(--billboard-button);
+  border: 1px solid white;
+  color: var(--billboard-btn-text);
 
 }
 
@@ -232,7 +254,7 @@ margin-top: 5px;
 }
 
 .firstword {
-  color:   #55D6BE;
+  color:   var(--top-buttons);
   float: left;
   font-family: Georgia;
   font-size: 75px;
@@ -248,7 +270,7 @@ margin-top: 5px;
 .billboardImage {
   height: 150px;
   margin: auto;
-  width: auto%;
+  width: auto;
   object-fit: contain;
 }
 
@@ -260,9 +282,11 @@ margin-top: 5px;
   }
 
 .feedbackImg {
-      margin: 0 auto 15px;
-      height: auto;
-      width: 100%;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  height: 160px;
+
+  width: 100%;
       object-fit: contain;
     }
 
@@ -273,9 +297,13 @@ margin-top: 5px;
   width: 260px;
   object-fit: cover;
   border-radius: 50%;
-  border: dashed #E5C3D1 3px;
+  border: dashed var(--dashed-border) 3px;
 }
 
+.logo {
+  color: var(--logo);
+  font-size: 26px;
+}
 
 .techdegree {
       height: auto;
@@ -307,7 +335,7 @@ margin-top: 5px;
   margin-top: 15px;
   height: 100px;
   width: 150px;
-  fill: #55D6BE;
+  fill: var(--icons);
 }
 
 .webdev {
@@ -337,31 +365,33 @@ margin-top: 5px;
   margin: 40px auto;
   width: 150px;
   height: 150px;
-  background-color: #55D6BE;
+  background-color: var(--top-buttons);
   border-radius: 50%;
-  border: dashed #E5C3D1 3px;
+  border: dashed var(--dashed-border) 3px;
 }
 
 .linkbtn {
     display: flex;
   justify-content:space-between;
   align-items: center;
-  font-size: 16px;
-  background-color: #55D6BE;
-  border-color: lightgrey;
   width: 200px;
   height: 40px;
 }
 
 .modalbtn {
   size: 16px;
-  background-color: #55D6BE;
-  border-color: lightgrey;
+  border-color: var(--dashed-button) 5px;
   width: 180px;
   height: 35px;
   margin-bottom: 15px;
+  background: var(--proj-button);
 }
 
+.resume {
+    background-color: var(--resume-button);
+    color: var(--resume-btn-text);
+    border: lightgrey;
+    }
 
 
   /* Previous and next Buttons */
@@ -432,6 +462,7 @@ margin-top: 5px;
     margin: 15px auto auto;
   }
 
+
   .billboardText {
     text-align: left;
     padding: 0;
@@ -442,9 +473,7 @@ margin-top: 5px;
     margin-left: 0;
   }
 
-  .video {
-    margin: auto;
-  }
+
 
   #image-CV {
     height: 295px;
@@ -452,9 +481,11 @@ margin-top: 5px;
   }
 
   .billboardImage {
-    height: 320px;
+    height: 260px;
     width: auto;
   }
+
+
 
 
   h2 {
@@ -462,10 +493,6 @@ margin-top: 5px;
   }
 
 
-.container-fluid {
-  padding: 15px;
-
-}
 
 .billboardText {
 padding-left: 15px;
@@ -489,6 +516,20 @@ height: 180px;
 
 @media only screen and (min-width: 1024px) {
 
+  .container-fluid {
+    padding: 15px;
+
+  }
+
+  .video {
+    margin: auto;
+  }
+
+  .billboardImage {
+    height: 360px;
+    width: auto;
+  }
+
   #about {
      padding-top: 15px;
   }
@@ -507,6 +548,7 @@ height: 180px;
 
 body {
     grid-row: 1;
+    width: 100%;
     grid-template-columns: 160px auto;
     grid-template-areas: "nav mainpage";
   }
@@ -554,7 +596,8 @@ body {
 }
 
 #test.modal-dialog {
-    max-width: 500px;
+    max-width: 450px;
+
 }
 
 #activity {
@@ -601,7 +644,8 @@ body.unfixed  {
   height: 100%;
   width: 100vw;
   overflow: hidden;
-}
+  background-color: white;
+  }
 
 span.unfixed {
   color: black;
@@ -634,6 +678,11 @@ transform: translate(-100px, -800px);
   margin-right: 1.5rem!important;
   margin-left: 1.5rem!important;
 }
+}
+
+.billboardBtn {
+  margin-left: 20px;
+
 }
 
 }
