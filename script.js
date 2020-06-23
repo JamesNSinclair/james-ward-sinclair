@@ -1,6 +1,5 @@
 let question = document.querySelectorAll("#question");
 let answer = document.querySelectorAll('#answer');
-const hotelModal = document.querySelectorAll('#hotel-modal');
 const hotels = document.querySelectorAll('.hotels');
 const activities = document.querySelectorAll('.activities');
 const testimonials = document.querySelectorAll('.testimonials');
