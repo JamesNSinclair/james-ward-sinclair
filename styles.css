@@ -82,8 +82,8 @@ a:hover {
 .loadpage,
 #information,
 #billboard,
-button,
-span,
+#clean,
+.firstword,
 #firstpara,
 #secondpara,
 #video,
@@ -615,7 +615,7 @@ body {
     max-width: 600px;
 }
 
-#tech.modal-dialog {
+.tech.modal-dialog {
     max-width: 700px;
 }
 
