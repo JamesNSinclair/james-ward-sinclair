@@ -9,7 +9,6 @@
   --project-billboard:#55D6BE;
   --billboard-text: white;
 --billboard-button-text: white;
-  --billboard-button:;
   --top-buttons: #55D6BE;
   --resume-button: #55D6BE;
     --resume-btn-text: white;
@@ -121,7 +120,7 @@ a:hover {
 }
 
 .projects.btn-primary {
-  background-color: #var(--proj-button);
+  background-color: var(--proj-button);
 }
 
 .projects {
@@ -230,7 +229,6 @@ a:hover {
 
 
 .intro {
-  font-style: uppercase;
   font-size: 55px;
   color: white;
   font-weight: bolder;
