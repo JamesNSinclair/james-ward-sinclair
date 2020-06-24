@@ -527,7 +527,7 @@ span.unfixed {
 }
 
 #image-CV.unfixed{
-transform: translatey(-100px);
+transform: translate(100px, -200px);
 }
 
 
