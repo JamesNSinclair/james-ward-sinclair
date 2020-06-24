@@ -86,7 +86,8 @@ a:hover {
 #firstpara,
 #secondpara,
 #image-CV,
-#sitenav {
+#sitenav,
+.logo {
   transition: 2s;
 }
 
@@ -98,8 +99,6 @@ a:hover {
 }
 
 .navbar {
-  background: var(--nav);
-  border-right: solid lightgrey 2px;
   position: fixed;
   width: 100vw;
   z-index: 900;
@@ -178,11 +177,15 @@ a:hover {
   z-index: 500;
   border-radius: 50%;
   display: none;
-  border: white;
+  border: white 1px solid;
 }
 
 .welcomeBtn:hover {
   background-color: var(--top-buttons);
+}
+
+#clean span {
+  font-size: 16px;
 }
 
 
@@ -218,7 +221,7 @@ a:hover {
 }
 
 .projects-text {
-  height: 100px;
+  height: 110px;
   margin-top: 5px;
   justify-content:center;
 }
@@ -236,13 +239,12 @@ a:hover {
 
 
 .intro {
-  font-size: 55px;
+  font-size: 40px;
   color: white;
   font-weight: bolder;
 }
 
 .intro-text {
-  font-size: 48px;
   width: 80%;
   margin: auto;
 }
@@ -328,8 +330,8 @@ a:hover {
 }
 
 .logo {
-  color: var(--logo);
-  font-size: 26px;
+  height: 60px;
+  width: auto;
 }
 
 .techdegree {
@@ -350,6 +352,8 @@ a:hover {
 
 #sitenav {
   grid-area: nav;
+  background-color: var(--nav);
+  border-right: solid lightgrey 2px;
 }
 
 #mainpage {
@@ -484,6 +488,14 @@ a:hover {
  margin-bottom: 25px;
 }
 
+.fake {
+  transition: 2s;
+      left: -1000px;
+  }
+
+.logo.unfixed {
+  transform: scale(0.01);
+}
 
 button.unfixed {
       display: block;
@@ -529,6 +541,7 @@ span.unfixed {
 #sitenav.unfixed {
   filter: grayscale(1) brightness(60%);
  transform: scaleY(2);
+ pointer-events: none;
 }
 
 #billboard.unfixed {
@@ -538,8 +551,15 @@ span.unfixed {
 
 #image-CV.unfixed{
 transform: translate(100px, -200px);
+pointer-events: none;
 }
 
+
+@media screen and (min-width: 480px) {
+
+  .intro {
+    font-size: 55px;
+  }
 
 @media screen and (min-width: 768px) {
 
@@ -550,7 +570,7 @@ transform: translate(100px, -200px);
     left: 25%;
 }
 
-  .intro-text {
+  .intro {
     font-size: 65px;
   }
 
@@ -613,6 +633,11 @@ height: 180px;
 
 @media only screen and (min-width: 1024px) {
 
+  .fake.unfixed {
+    left: -175px;
+  }
+
+
   .welcomeBtn {
     left: 40%;
 }
@@ -636,15 +661,21 @@ height: 180px;
   }
 
   .logo {
-      width: 125px;
+      width: 140px;
+      height: auto;
   }
+
 
   .navbar-expand-lg .navbar-nav,
   .navbar {
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    font-size: 16px
+    font-size: 16px;
+  }
+
+  #sitenav.px-2 {
+    padding: 0;
   }
 
 body {
@@ -671,11 +702,6 @@ body {
   margin-top: 3rem;
   flex-grow: 0;
   align-items: flex-start;
-}
-
-.logo {
-    margin-top: 1rem;
-
 }
 
 .techdegree {

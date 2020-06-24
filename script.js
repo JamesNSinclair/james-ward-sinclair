@@ -79,7 +79,7 @@ button2.addEventListener('click', () => {
 
 button3.addEventListener('click', () => {
   let number = testimonials.length;
-  console.log('yo');
+  
   createScroll(0, 2, number);
 });
 
