@@ -1,7 +1,7 @@
 /* Global Layout Set-up */
 
 :root {
-  --background: antiquewhite;
+  --background: floralwhite;
   --nav: #55D6BE;
   --layer: linear-gradient(180deg, rgba(85,214,190,0.85) 69%, rgba(1,195,209,0.85) 100%);
   --dashed-border: #E5C3D1;
@@ -85,7 +85,6 @@ a:hover {
 .firstword,
 #firstpara,
 #secondpara,
-#video,
 #image-CV,
 #sitenav {
   transition: 2s;
@@ -182,6 +181,14 @@ a:hover {
   border: white;
 }
 
+.welcomeBtn:hover {
+  background-color: var(--top-buttons);
+}
+
+
+.video:hover {
+ background-color: var(--dashed-border)
+}
 
 #billboard {
   margin-top: 15px;
@@ -388,6 +395,9 @@ a:hover {
   background-color: var(--top-buttons);
   border-radius: 50%;
   border: dashed var(--dashed-border) 3px;
+  transition-property: filter, transform;
+  transition-duration: 2s;
+
 }
 
 .linkbtn {
@@ -481,8 +491,8 @@ button.unfixed {
 
 #video.unfixed {
   transform: translatey(150px) scale(2);
-
-  background-color: grey;
+  filter: grayscale(95%);
+  pointer-events: none;
 }
 
 #firstpara.unfixed {
@@ -523,7 +533,7 @@ span.unfixed {
 
 #billboard.unfixed {
   transform: translateY(-850px) rotate(-180deg);
-    background: antiquewhite;
+    background: floralwhite;
 }
 
 #image-CV.unfixed{
