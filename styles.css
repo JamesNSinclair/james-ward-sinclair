@@ -698,26 +698,16 @@ height: 150px;
   height: auto;
 }
 
-button.unfixed {
-      display: block;
-  }
-
 #video.unfixed {
   transform: translate(150px, -300px) scale(2);
-
-  background-color: grey;
 }
 
 #firstpara.unfixed {
   margin-top: 40px;
-    color:black;
+  color:black;
   transform: translate(600px, -600px);
  transform: rotate(120deg);
 
-}
-
-#information.unfixed {
-  display: none;
 }
 
 #secondpara.unfixed {
@@ -725,19 +715,7 @@ transform: translatex(600px);
 font-size: 30px
 }
 
-body.unfixed  {
-  height: 100%;
-  overflow: hidden;
-  background-color: white;
-  }
-
-span.unfixed {
-  color: black;
-  font-size: 14px;
-}
-
 #sitenav.unfixed {
-  filter: grayscale(1) brightness(60%);
  transform: scaleX(2);
 }
 
