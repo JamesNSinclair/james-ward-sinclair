@@ -169,13 +169,13 @@ a:hover {
 
 /* WELCOME */
 .welcomeBtn {
-  width: 380px;
-  height: 380px;
+  width: 340px;
+  height: 340px;
   position: fixed;
   background-color: var(--top-buttons);
   color: white;
   top: 30%;
-  left: 40%;
+  left: 5%;
   z-index: 500;
   border-radius: 50%;
   display: none;
@@ -235,7 +235,9 @@ a:hover {
 }
 
 .intro-text {
-  font-size: 65px;
+  font-size: 48px;
+  width: 80%;
+  margin: auto;
 }
 
 .billboardExample {
@@ -472,7 +474,75 @@ a:hover {
  margin-bottom: 25px;
 }
 
+
+button.unfixed {
+      display: block;
+  }
+
+#video.unfixed {
+  transform: translatey(150px) scale(2);
+
+  background-color: grey;
+}
+
+#firstpara.unfixed {
+    color:black;
+ transform: rotate(120deg) translate(-20px);
+
+}
+
+#information.unfixed {
+  display: none;
+}
+
+#secondpara.unfixed {
+transform: translatey(600px);
+font-size: 30px
+}
+
+body.unfixed  {
+  background-color: white;
+  margin: 0;
+   height: 100%;
+   overflow: hidden;
+  }
+
+html.unfixed {
+  margin: 0; height: 100%; overflow: hidden;
+}
+
+span.unfixed {
+  color: black;
+  font-size: 14px;
+}
+
+#sitenav.unfixed {
+  filter: grayscale(1) brightness(60%);
+ transform: scaleY(2);
+}
+
+#billboard.unfixed {
+  transform: translateY(-850px) rotate(-180deg);
+    background: antiquewhite;
+}
+
+#image-CV.unfixed{
+transform: translatey(-100px);
+}
+
+
 @media screen and (min-width: 768px) {
+
+  .welcomeBtn {
+    width: 380px;
+    height: 380px;
+    top: 30%;
+    left: 40%;
+}
+
+  .intro-text {
+    font-size: 65px;
+  }
 
   #billboard {
     flex-direction: row;
