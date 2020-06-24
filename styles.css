@@ -537,7 +537,7 @@ transform: translatey(-100px);
     width: 380px;
     height: 380px;
     top: 30%;
-    left: 40%;
+    left: 25%;
 }
 
   .intro-text {
@@ -602,6 +602,10 @@ height: 180px;
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .welcomeBtn {
+    left: 40%;
+}
 
   .container-fluid {
     padding: 15px;
