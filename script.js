@@ -14,6 +14,16 @@ const start = document.querySelector('.loadpage');
 const page = document.querySelector('#firstpage');
 const clean = document.querySelector('#clean');
 
+
+function toggleVideo(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("popupVid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+}
+
 console.log(start);
 $(document).ready(function(){
     $(this).scrollTop(0);
@@ -79,7 +89,7 @@ button2.addEventListener('click', () => {
 
 button3.addEventListener('click', () => {
   let number = testimonials.length;
-  
+
   createScroll(0, 2, number);
 });
 
